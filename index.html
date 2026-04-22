@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deep Learning | Visual Learning Atlas</title>
+    <meta
+      name="description"
+      content="A structured deep learning website designed to explain core ideas with clear writing, clean diagrams, and a practical learning path."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Deep Learning</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#path">Path</a>
+        <a href="#lectures">Lectures</a>
+        <a href="#topics">Topics</a>
+        <a href="#method">Method</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Visual Learning Atlas</p>
+          <h1>Deep learning, explained with structure instead of noise.</h1>
+          <p class="hero-text">
+            Built from your nine lecture PDFs and extended with carefully chosen
+            outside material, this site turns a course archive into a cleaner
+            path from introduction and math foundations to CNNs, RNNs, and
+            Transformer systems.
+          </p>
+          <ul class="hero-meta" aria-label="Project summary">
+            <li>9 local lecture PDFs</li>
+            <li>5-step learning path</li>
+            <li>Visual explanation-first design</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#path">Start with the learning path</a>
+            <a class="button button-secondary" href="docs/PROJECT_PLAN.md">Read project plan</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-frame">
+            <div class="signal signal-a"></div>
+            <div class="signal signal-b"></div>
+            <div class="signal signal-c"></div>
+            <div class="visual-grid"></div>
+            <div class="visual-label label-left">Math</div>
+            <div class="visual-label label-center">Vision</div>
+            <div class="visual-label label-right">Sequence</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="path-section section" id="path">
+        <div class="section-heading">
+          <p class="section-kicker">Recommended Path</p>
+          <h2>Learn in a sequence that actually compounds.</h2>
+        </div>
+        <ol class="path-rail">
+          <li>
+            <span class="path-index">01</span>
+            <h3>Foundations</h3>
+            <p>Vectors, derivatives, optimization, and the logic of models.</p>
+          </li>
+          <li>
+            <span class="path-index">02</span>
+            <h3>Neural Networks</h3>
+            <p>Forward flow, backpropagation, gradient descent, and training.</p>
+          </li>
+          <li>
+            <span class="path-index">03</span>
+            <h3>Vision Models</h3>
+            <p>Convolution, local receptive fields, pooling, and CNN design.</p>
+          </li>
+          <li>
+            <span class="path-index">04</span>
+            <h3>Sequence Models</h3>
+            <p>RNN, memory over time, attention, and sequence understanding.</p>
+          </li>
+          <li>
+            <span class="path-index">05</span>
+            <h3>Transformer Era</h3>
+            <p>Attention-first architectures, scaling, and modern applications.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="route-section section">
+        <div class="section-heading narrow">
+          <p class="section-kicker">Path Supplements</p>
+          <h2>The first four stages now have a concrete reading stack.</h2>
+        </div>
+
+        <div class="route-detail">
+          <div class="route-header">
+            <span class="route-step">Path 01</span>
+            <div>
+              <h3>Foundations</h3>
+              <p>
+                Start from the local lectures, then add visual math and review
+                notes so the later model content has enough mathematical support.
+              </p>
+            </div>
+          </div>
+          <div class="route-columns">
+            <div class="route-block">
+              <p class="route-label">Local backbone</p>
+              <ul class="resource-list">
+                <li><a href="resource/lecture01_introduction.pdf">Lecture 01: Introduction</a></li>
+                <li><a href="resource/lecture02_math_foundations.pdf">Lecture 02: Math Foundations</a></li>
+                <li><a href="resource/lecture03_ml_basics.pdf">Lecture 03: Machine Learning Basics</a></li>
+              </ul>
+            </div>
+            <div class="route-block">
+              <p class="route-label">Curated external support</p>
+              <ul class="resource-list">
+                <li>
+                  <a href="https://www.youtube.com/watch?v=RNTRYicPvWQ" target="_blank" rel="noreferrer">
+                    3Blue1Brown: Essence of Linear Algebra
+                  </a>
+                </li>
+                <li>
+                  <a href="https://d2l.ai/chapter_preliminaries/linear-algebra.html" target="_blank" rel="noreferrer">
+                    Dive into Deep Learning: Linear Algebra
+                  </a>
+                </li>
+                <li>
+                  <a href="https://d2l.ai/chapter_preliminaries/autograd.html" target="_blank" rel="noreferrer">
+                    Dive into Deep Learning: Automatic Differentiation
+                  </a>
+                </li>
+                <li>
+                  <a href="https://cs229.stanford.edu/notes2022fall/cs229-linear_algebra_review.pdf" target="_blank" rel="noreferrer">
+                    Stanford CS229: Linear Algebra Review
+                  </a>
+                </li>
+                <li>
+                  <a href="https://cs229.stanford.edu/lectures-spring2022/cs229-probability_review.pdf" target="_blank" rel="noreferrer">
+                    Stanford CS229: Probability Review
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="route-detail">
+          <div class="route-header">
+            <span class="route-step">Path 02</span>
+            <div>
+              <h3>Neural Networks</h3>
+              <p>
+                Once the math is in place, move into model mechanics: forward
+                passes, loss computation, backpropagation, optimization, and
+                practical training flow.
+              </p>
+            </div>
+          </div>
+          <div class="route-columns">
+            <div class="route-block">
+              <p class="route-label">Local backbone</p>
+              <ul class="resource-list">
+                <li><a href="resource/lecture03_ml_basics.pdf">Lecture 03: Machine Learning Basics</a></li>
+                <li><a href="resource/lecture04_training_practice.pdf">Lecture 04: Training Practice</a></li>
+                <li><a href="resource/lecture05_pytorch_practice.pdf">Lecture 05: PyTorch Practice</a></li>
+              </ul>
+            </div>
+            <div class="route-block">
+              <p class="route-label">Curated external support</p>
+              <ul class="resource-list">
+                <li>
+                  <a href="https://neuralnetworksanddeeplearning.com/chap2" target="_blank" rel="noreferrer">
+                    Michael Nielsen: How Backpropagation Works
+                  </a>
+                </li>
+                <li>
+                  <a href="https://cs231n.github.io/neural-networks-case-study/" target="_blank" rel="noreferrer">
+                    Stanford CS231n: Neural Network Case Study
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.3blue1brown.com/topics/neural-networks" target="_blank" rel="noreferrer">
+                    3Blue1Brown: Neural Networks Topic Collection
+                  </a>
+                </li>
+                <li>
+                  <a href="https://classic.d2l.ai/chapter_optimization/index.html" target="_blank" rel="noreferrer">
+                    Dive into Deep Learning: Optimization
+                  </a>
+                </li>
+                <li>
+                  <a href="https://cs229.stanford.edu/section/cs229-cvxopt.pdf" target="_blank" rel="noreferrer">
+                    Stanford CS229: Convex Optimization Overview
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="route-detail">
+          <div class="route-header">
+            <span class="route-step">Path 03</span>
+            <div>
+              <h3>Vision Models</h3>
+              <p>
+                This stage moves from generic networks into image structure:
+                convolution, pooling, receptive fields, architectural patterns,
+                and the practical transfer of pretrained vision models.
+              </p>
+            </div>
+          </div>
+          <div class="route-columns">
+            <div class="route-block">
+              <p class="route-label">Local backbone</p>
+              <ul class="resource-list">
+                <li><a href="resource/lecture05_pytorch_practice.pdf">Lecture 05: PyTorch Practice</a></li>
+                <li><a href="resource/lecture06_cnn_basics.pdf">Lecture 06: CNN Basics</a></li>
+                <li><a href="resource/lecture07_cnn_architectures.pdf">Lecture 07: CNN Architectures</a></li>
+              </ul>
+            </div>
+            <div class="route-block">
+              <p class="route-label">Curated external support</p>
+              <ul class="resource-list">
+                <li>
+                  <a href="https://cs231n.github.io/convolutional-networks/" target="_blank" rel="noreferrer">
+                    Stanford CS231n: Convolutional Networks
+                  </a>
+                </li>
+                <li>
+                  <a href="https://cs231n.github.io/understanding-cnn/" target="_blank" rel="noreferrer">
+                    Stanford CS231n: Understanding CNN Features
+                  </a>
+                </li>
+                <li>
+                  <a href="https://d2l.ai/chapter_convolutional-neural-networks/index.html" target="_blank" rel="noreferrer">
+                    Dive into Deep Learning: Convolutional Neural Networks
+                  </a>
+                </li>
+                <li>
+                  <a href="https://docs.pytorch.org/tutorials/beginner/transfer_learning_tutorial.html" target="_blank" rel="noreferrer">
+                    PyTorch: Transfer Learning for Computer Vision
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="route-detail">
+          <div class="route-header">
+            <span class="route-step">Path 04</span>
+            <div>
+              <h3>Sequence Models</h3>
+              <p>
+                Here the focus shifts from spatial structure to temporal and
+                token order: sequence modeling, recurrent networks, encoder
+                decoder flow, and attention over sequence context.
+              </p>
+            </div>
+          </div>
+          <div class="route-columns">
+            <div class="route-block">
+              <p class="route-label">Local backbone</p>
+              <ul class="resource-list">
+                <li><a href="resource/lecture08_rnn_sequence.pdf">Lecture 08: RNN and Sequence Modeling</a></li>
+                <li><a href="resource/lecture09_attention_transformer.pdf">Lecture 09: Attention and Transformer</a></li>
+              </ul>
+            </div>
+            <div class="route-block">
+              <p class="route-label">Curated external support</p>
+              <ul class="resource-list">
+                <li>
+                  <a href="https://d2l.ai/chapter_recurrent-neural-networks/" target="_blank" rel="noreferrer">
+                    Dive into Deep Learning: Recurrent Neural Networks
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.d2l.ai/chapter_recurrent-modern/index.html" target="_blank" rel="noreferrer">
+                    Dive into Deep Learning: Modern Recurrent Neural Networks
+                  </a>
+                </li>
+                <li>
+                  <a href="https://docs.pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html" target="_blank" rel="noreferrer">
+                    PyTorch: Seq2Seq Translation with Attention
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.d2l.ai/chapter_attention-mechanisms-and-transformers/index.html" target="_blank" rel="noreferrer">
+                    Dive into Deep Learning: Attention Mechanisms and Transformers
+                  </a>
+                </li>
+                <li>
+                  <a href="https://web.stanford.edu/class/cs224n" target="_blank" rel="noreferrer">
+                    Stanford CS224N: Deep Learning for NLP
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="lecture-section section" id="lectures">
+        <div class="section-heading">
+          <p class="section-kicker">Course Backbone</p>
+          <h2>All nine local PDFs are part of the site map.</h2>
+        </div>
+        <div class="lecture-grid">
+          <a class="lecture-item" href="resource/lecture01_introduction.pdf">
+            <span>Lecture 01</span>
+            <h3>Introduction</h3>
+            <p>Project entry point, basic framing, and the overall field view.</p>
+          </a>
+          <a class="lecture-item" href="resource/lecture02_math_foundations.pdf">
+            <span>Lecture 02</span>
+            <h3>Math Foundations</h3>
+            <p>Linear algebra, derivatives, probability, and prerequisite tools.</p>
+          </a>
+          <a class="lecture-item" href="resource/lecture03_ml_basics.pdf">
+            <span>Lecture 03</span>
+            <h3>Machine Learning Basics</h3>
+            <p>Core concepts that bridge classical ML into neural methods.</p>
+          </a>
+          <a class="lecture-item" href="resource/lecture04_training_practice.pdf">
+            <span>Lecture 04</span>
+            <h3>Training Practice</h3>
+            <p>Losses, optimization flow, and practical training behavior.</p>
+          </a>
+          <a class="lecture-item" href="resource/lecture05_pytorch_practice.pdf">
+            <span>Lecture 05</span>
+            <h3>PyTorch Practice</h3>
+            <p>Framework-side implementation and model-building workflow.</p>
+          </a>
+          <a class="lecture-item" href="resource/lecture06_cnn_basics.pdf">
+            <span>Lecture 06</span>
+            <h3>CNN Basics</h3>
+            <p>Convolution, filters, feature maps, and image-oriented priors.</p>
+          </a>
+          <a class="lecture-item" href="resource/lecture07_cnn_architectures.pdf">
+            <span>Lecture 07</span>
+            <h3>CNN Architectures</h3>
+            <p>Representative network designs and deeper vision model patterns.</p>
+          </a>
+          <a class="lecture-item" href="resource/lecture08_rnn_sequence.pdf">
+            <span>Lecture 08</span>
+            <h3>RNN and Sequence Modeling</h3>
+            <p>Temporal dependency, recurrence, and sequential representation.</p>
+          </a>
+          <a class="lecture-item" href="resource/lecture09_attention_transformer.pdf">
+            <span>Lecture 09</span>
+            <h3>Attention and Transformer</h3>
+            <p>Attention mechanisms and the architecture shift into modern DL.</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="topics-section section" id="topics">
+        <div class="section-heading">
+          <p class="section-kicker">Core Topics</p>
+          <h2>The first eight pages define the whole website.</h2>
+        </div>
+        <div class="topic-layout">
+          <article class="topic-item">
+            <span>01</span>
+            <h3>What a neural network is</h3>
+            <p>From a single neuron to a layered function approximator.</p>
+          </article>
+          <article class="topic-item">
+            <span>02</span>
+            <h3>Forward and backward propagation</h3>
+            <p>How signals move forward and gradients travel back.</p>
+          </article>
+          <article class="topic-item">
+            <span>03</span>
+            <h3>Gradient descent</h3>
+            <p>Why optimization works and how learning rate changes behavior.</p>
+          </article>
+          <article class="topic-item">
+            <span>04</span>
+            <h3>What convolution is</h3>
+            <p>Sliding filters, local patterns, and feature extraction.</p>
+          </article>
+          <article class="topic-item">
+            <span>05</span>
+            <h3>Why CNN fits images</h3>
+            <p>Spatial structure, parameter sharing, and hierarchical features.</p>
+          </article>
+          <article class="topic-item">
+            <span>06</span>
+            <h3>What RNN does</h3>
+            <p>How sequential context changes the way a model reads input.</p>
+          </article>
+          <article class="topic-item">
+            <span>07</span>
+            <h3>What attention means</h3>
+            <p>Weighted focus over information instead of fixed memory alone.</p>
+          </article>
+          <article class="topic-item">
+            <span>08</span>
+            <h3>Transformer basics</h3>
+            <p>The architecture that reorganized modern deep learning systems.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="method-section section" id="method">
+        <div class="section-heading narrow">
+          <p class="section-kicker">Why This Site</p>
+          <h2>Built to clarify, not just collect.</h2>
+        </div>
+        <div class="method-columns">
+          <div>
+            <h3>Explanation-first</h3>
+            <p>
+              Each page should answer what the concept is, why it matters, and
+              how it works before adding detail.
+            </p>
+          </div>
+          <div>
+            <h3>Diagram-led</h3>
+            <p>
+              The site will rely on simplified visual explanations instead of
+              dense slide screenshots or long copied passages.
+            </p>
+          </div>
+          <div>
+            <h3>Structured growth</h3>
+            <p>
+              Content expansion follows a stable project plan, topic system, and
+              page template so the site stays coherent.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <p class="section-kicker">Next Stage</p>
+        <h2>From concept atlas to a full learning system.</h2>
+        <p>
+          The current build now connects the local lecture archive, the first
+          four supported learning paths, and the long-term content plan in one
+          homepage.
+        </p>
+        <a class="button button-primary" href="docs/PROJECT_PLAN.md">Open the project plan</a>
+      </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
