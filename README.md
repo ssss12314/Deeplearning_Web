@@ -2,7 +2,7 @@
 
 Static learning website project for explaining deep learning concepts with clear structure, diagrams, and curated references.
 
-Start from [docs/PROJECT_PLAN.md](/Users/youtianshuo/projects/Deep_Learning/docs/PROJECT_PLAN.md).
+Start from [docs/PROJECT_PLAN.md](/Users/youtianshuo/projects/Deep_Learning/docs/PROJECT_PLAN.md).   
 
 Current status:
 
